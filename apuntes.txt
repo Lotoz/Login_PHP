@@ -1,0 +1,9 @@
+El htmlspecialchars es solo cuando es el mismo archivos
+
+Reparar el css.
+Crear verificadores en Javascript -> 
+usuario : 6 letras - 3 numeros y guion obligatorio
+password: (la definida antes)
+code-secure: 6 numeros 
+
+Controla el acceso de los por el nivel de usuario
