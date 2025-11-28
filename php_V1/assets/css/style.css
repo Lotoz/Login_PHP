@@ -66,9 +66,7 @@
     border-radius: var(--card-radius);
     padding: 18px;
     box-shadow: 0 10px 30px rgba(2, 6, 8, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.02) inset;
-    position: relative;
     border-left: 6px solid var(--scp-accent);
-    box-sizing: border-box;
     color: var(--scp-text);
     font-size: 14px;
 }

@@ -7,3 +7,5 @@ password: (la definida antes)
 code-secure: 6 numeros 
 
 Controla el acceso de los por el nivel de usuario
+
+El fatal error que sale es porque tenemos habilitados mas errores a nivel sistema y no nos permite ver las cosas que manejasmos
