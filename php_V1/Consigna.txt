@@ -14,3 +14,7 @@ Control XSS
 En bienvenida logout  -> para salir 
 
 La longitud del password 8 < || > 26
+
+
+Hay que limpiar la session para hacerla segura y usar cookies.
+

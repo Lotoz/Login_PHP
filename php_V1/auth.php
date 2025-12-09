@@ -3,13 +3,16 @@
 //Iniciamos la session
 session_start();    //* Hay que hacer que sea segura
 
+//? Incluir otro if que pregunte si esta la variable de sesion vigent
+// Si es un si, devolvemos a if
+//* if(){}
 if (isset($_REQUEST['user'])) {
     if (isset($_REQUEST['password'])) {
         //Hacer lo de HTML_SANITAZION
         //!Declaracion de variables
         $DATABASE_HOST = 'localhost';
-        $DATABASE_USER = 'root'; //! Esto es inseguro, deberia ser un usuario con los permisos minimos funcionales
-        $DATABASE_PASS = '';    //! Inseguro
+        $DATABASE_USER = 'login-php'; //! Esto es inseguro, deberia ser un usuario con los permisos minimos funcionales
+        $DATABASE_PASS = 'Lotoz.1234Z';    //! Ya tenemos usuario solo con select :D
         $DATABASE_NAME = 'login-php-v1'; //? Porque es la primera version de esta base de datos -> Incluso, es una BD de prueba
 
         //* Conexion a la base de datos

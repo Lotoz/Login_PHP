@@ -1,0 +1,15 @@
+#Aqui se debe desarollar el pryecto basandote en las practicas ya creadas
+
+Esta es la primera Prueba de la clase 100% funcional.
+Hasta el 8 tiene que estar listo.
+
+1-Validar el front -> 
+    Usuario: nombre de 3 iniciales, 3 numeros
+    Password: de 8 a 64 caracteres, "lo elige el usuario" -> Usar htmlentites
+    Code-Secure: 6 numeros separados 333-333
+
+2-Asegurar cookies.
+
+3-Generar el token de CRSF.
+
+4-Eliminar cookie de sesion y la sesion.

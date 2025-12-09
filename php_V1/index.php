@@ -14,7 +14,8 @@ session_start(); //*Pendiente de hacer la seguridad
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="shortcut icon" href="./assets/img/scpLogo.png" type="image/x-icon">
-    <!-- //! Custom SCP style Estetica rota, revisar luego  <link rel="stylesheet" href="./assets/css/style.css">-->
+    <!-- //! Custom SCP style Estetica rota, revisar luego  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 
 </head>

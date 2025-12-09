@@ -1,0 +1,31 @@
+:root {
+    --fondo: #150000;
+    --scp-bg: #4b2222;
+    --scp-panel: #0f1619;
+    --scp-surface: #0b1214;
+    --scp-accent: #b30000;
+    --scp-accent-2: #ff3b3b;
+    --scp-muted: #9aa3a8;
+    --scp-text: #e6efef;
+    --scp-glow: rgba(179, 0, 0, 0.16);
+    --mono: "Anonymous Pro", "Roboto Mono", "Courier New", monospace;
+    --ui: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+/* Estetica general del body*/
+body{
+    background-color: var(--fondo);
+}
+/*Estitica del fondo de el login*/
+.box-general{
+    text-align: center;
+    width: 680px;
+    height: 360px;
+    background-color: var(--scp-bg);
+}
+/*Estetica de la imagen*/
+.imagen {
+    border: 2px solid var(--scp-surface);
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+}
