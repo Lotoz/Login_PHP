@@ -20,17 +20,21 @@ document.getElementById('login-principal').addEventListener('submit', function (
     errorUser.innerHTML = '';
     errorPassword.innerHTML = '';
 
-    //SI todo sale bien, seria valido y enviaria el formulario
+    //Expresiones regulares Agregar
+    const userVerfication = '';
+    const passVerification = '';
+
+    //Si todo sale bien, seria valido y enviaria el formulario
     let valido = true;
 
     // Validación de Nombre
-    if (user.value.trim() === '' || ) {
+    if (user.value.trim() === '' || userVerfication.test(user.value)) {
         errorUser.innerHTML = 'El nombre es obligatorio.';
         valido = false;
     }
 
     // Validación de contrasena, solo validamos el largo.
-    if (password.value.trim() === '' || ) {
+    if (password.value.trim() === '' || passVerification.test(password.value) ) {
         errorEmail.innerHTML = 'Introduce un email válido.';
         valido = false;
     }
