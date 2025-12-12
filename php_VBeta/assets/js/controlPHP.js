@@ -7,39 +7,50 @@
  * Este codigo es un controlador de todo esto
  */
 document.getElementById('login-principal').addEventListener('submit', function (e) {
-    //Detenemos el envio del formulario
     e.preventDefault();
+
     let user = document.getElementById('user');
     let password = document.getElementById('password');
     let errorUser = document.getElementById('errorUser');
     let errorPassword = document.getElementById('errorPassword');
 
-    //Se debe concatenar
     const error = `<span class="bi bi-exclamation-triangle-fill"></span>`;
+
     // Limpiar errores previos
-    errorUser.innerHTML = '';
-    errorPassword.innerHTML = '';
+    errorUser.innerHTML = "";
+    errorUser.hidden = true;
+    errorPassword.innerHTML = "";
+    errorPassword.hidden = true;
 
-    //Expresiones regulares Agregar
-    const userVerfication = '';
-    const passVerification = '';
+    // Regex correctos
+    const userVerification = /^[a-zA-Z0-9_-]+$/;
+    const passVerification = /^(?!.*["\\\/<>=()]).{8,64}$/;
 
-    //Si todo sale bien, seria valido y enviaria el formulario
     let valido = true;
 
-    // Validación de Nombre
-    if (user.value.trim() === '' || userVerfication.test(user.value)) {
-        errorUser.innerHTML = 'El nombre es obligatorio.';
+    // Validación de usuario
+    if (user.value.trim() === '') {
+        errorUser.hidden = false;
+        errorUser.innerHTML = error + ' El nombre es obligatorio.';
+        valido = false;
+    } else if (!userVerification.test(user.value.trim())) {
+        errorUser.hidden = false;
+        errorUser.innerHTML = error + ' Solo se permiten letras, números, "-" y "_".';
         valido = false;
     }
 
-    // Validación de contrasena, solo validamos el largo.
-    if (password.value.trim() === '' || passVerification.test(password.value) ) {
-        errorEmail.innerHTML = 'Introduce un email válido.';
+    // Validación de contraseña
+    if (password.value.trim() === '') {
+        errorPassword.hidden = false;
+        errorPassword.innerHTML = error + ' La contraseña es obligatoria.';
+        valido = false;
+    } else if (!passVerification.test(password.value)) {
+        errorPassword.hidden = false;
+        errorPassword.innerHTML = error + ' La contraseña debe tener entre 8 y 64 caracteres.';
         valido = false;
     }
 
     if (valido) {
-        this.submit(); // Para enviar el formulario
+        this.submit();
     }
 });

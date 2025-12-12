@@ -22,22 +22,23 @@
             <p class="warning-text">WARNING: AUTHORIZED PERSONNEL ONLY</p>
         </div>
 
-        <form action="auth.php" method="POST" class="login-form" id="login-principal">
+        <form action="auth.php" method="POST" class="login-form" id="login-principal" autocomplete="off">
             <div class="mb-3 text-start">
                 <label for="user" class="form-label">OPERATIVE ID</label>
                 <input type="text" name="user" id="user" class="form-control scp-input" placeholder="Enter ID..." autocomplete="off">
 
             </div>
-            <!--Alert <div class="alert alert-danger mb-3 scp-error" role="alert" id="errorUser">
-            </div>-->
-
+            <!--Alert -->
+            <div class="alert alert-danger mb-3 bg-dark border border-danger  scp-error" role="alert" id="errorUser" hidden>
+            </div>
             <div class="mb-4 text-start">
                 <label for="password" class="form-label">SECURITY CLEARANCE</label>
                 <input type="password" name="password" id="password" class="form-control scp-input" placeholder="Enter Password...">
             </div>
             <!--Alert <div class="alert alert-danger mb-3 scp-error" role="alert" id="errorPassword">
             </div>-->
-
+            <div class="alert alert-danger mb-3 bg-dark border border-danger  scp-error" role="alert" id="errorPassword" hidden>
+            </div>
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-scp" id="btnLogin">AUTHENTICATE</button>
             </div>
@@ -47,6 +48,7 @@
             SECURE. CONTAIN. PROTECT.
         </div>
     </div>
+    <script src="./assets/js/controlPHP.js"></script>
 </body>
 
 </html>

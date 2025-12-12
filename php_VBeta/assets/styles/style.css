@@ -150,8 +150,9 @@ h1 {
 /* --- Error --- */
 scp-error{
     /*Fondo transparente, letras rojas e icono rojo*/
-    background-color: transparent;
-    color: var(--scp-accent);
+    color: var(--scp-accent-2);
+    font-weight: bolder;
+    font-style: italic;
 }
 /* --- Footer --- */
 .footer-code {
